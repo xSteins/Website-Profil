@@ -1,4 +1,26 @@
 .header {
+	overflow: hidden;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 30px;
+	line-height: 25px;
+	border-radius: 4px;
+	border-start-end-radius: 2px;
+	background-color: teal;
+	outline-style: outset;
+}
+.header a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 25px; 
+	line-height: 25px;
+	border-radius: 4px;
+	border-start-end-radius: 2px;
+  }
+.header .logo {
+	image-resolution: 20px;
+	position: fixed;
+	margin-left: 10px;
 }
