@@ -22,10 +22,9 @@ body{
 	border-start-end-radius: 2px;
   }
   
-  	.header a .logo{
-  padding: 10px 10px 10px 10px;
-  image-resolution: 20px;
-  position: fixed;
+  	.header .logo .gambar {
+padding: 10px;
+ 	position: static;
   
   }
   	.header .judul a {
@@ -59,3 +58,5 @@ body{
 	  display: block;
 	}
   }
+
+  
