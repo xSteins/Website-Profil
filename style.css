@@ -38,12 +38,14 @@ body {
 	.header .header-right a:hover {
 	background-color: dodgerblue;
 	color: white;
-	padding: 20px;
   }
+  	.header-right a {
+		  
+	  }
     .header-right {
-	padding: 50px;
+	padding-top: 50px;
 	font-size: initial;
-	float: right;
+	float: right	;
   }
   
   @media screen and (max-width: 500px) {
