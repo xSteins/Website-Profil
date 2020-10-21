@@ -1,5 +1,26 @@
 body {
-	margin: 0;
+    line-height: 1;
+    margin: auto;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q{
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+    content: '';
+}
+table {
+    border-collapse: collapse;
+	border-spacing: 0;
 }
 /*Style untuk Header utama*/
 	.header {
@@ -8,7 +29,6 @@ body {
 	padding-bottom: 5px;
 	width: 100%;
 	overflow: hidden;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
 /*Style Teks link*/
@@ -66,24 +86,23 @@ body {
   /* Bagian Isi Website*/
 
 body .container h1{
-	display: block;
+	height: auto;
 	margin: 30px;
 	border: 30px;
 	padding: 50px;
 }
   
   
+
 /* Bagian footer*/
 
-.footer-distributed {
-	min-height: 100%;
-	height: 100%; 
+.bottom-wrapper {
 	bottom: 0;
+	position: static;
+
 }
-  
-  section {
+section {
 	width: 100%;
-	position: fixed;
 	bottom: 0;
 	display: inline-block;
 	background: #333;
@@ -95,58 +114,60 @@ body .container h1{
 	min-height: 100%;
     height: 100%; 
   }
-  
-  .footer-distributed{
-	  background: #666;
-	  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	  box-sizing: border-box;
-	  width: 100%;
-	  text-align: left;
-	  font: bold 16px sans-serif;
-	  padding: 55px 50px;
+  .footer-bawah{
+	background: #666;
+	position: static;	
+	bottom: 0; 
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px verdana;
+	padding: 1em 1em;
   }
   
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
+  .footer-bawah .footer-left,
+  .footer-bawah .footer-center,
+  .footer-bawah .footer-right{
 	  display: inline-block;
 	  vertical-align: top;
   }
 /* Footer left */
 
-.footer-distributed .footer-left{
+.footer-bawah .footer-left{
 	width: 40%;
 }
 
 /* The company logo */
 
-.footer-distributed h3{
+.footer-bawah h3{
 	color:  #ffffff;
-	font: normal 36px cursive;
+	font: normal 50px caption;
 	margin: 0;
 }
 
-.footer-distributed h3 span{
+.footer-bawah h3 span{
 	color:  lightseagreen;
 }
 
 /* Footer links */
 
-.footer-distributed .footer-links{
+.footer-bawah .footer-links{
 	color:  #ffffff;
-	margin: 20px 0 12px;
+	margin: 10px 0 12px;
 	padding: 0;
+	
 }
 
-.footer-distributed .footer-links a{
+.footer-bawah .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-  font-weight:400;
+	font-weight:600;
 	text-decoration: none;
 	color:  inherit;
 }
 
-.footer-distributed .footer-company-name{
+.footer-bawah .footer-company-name{
 	color:  #222;
 	font-size: 14px;
 	font-weight: normal;
@@ -155,11 +176,11 @@ body .container h1{
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
+.footer-bawah .footer-center{
 	width: 35%;
 }
 
-.footer-distributed .footer-center i{
+.footer-bawah .footer-center i{
 	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 25px;
@@ -172,12 +193,12 @@ body .container h1{
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-bawah .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
 
-.footer-distributed .footer-center p{
+.footer-bawah .footer-center p{
 	display: inline-block;
 	color: #ffffff;
   font-weight:400;
@@ -185,19 +206,19 @@ body .container h1{
 	margin:0;
 }
 
-.footer-distributed .footer-center p span{
+.footer-bawah .footer-center p span{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
 
-.footer-distributed .footer-center p a{
+.footer-bawah .footer-center p a{
 	color:  lightseagreen;
 	text-decoration: none;;
 }
 
-.footer-distributed .footer-links a:before {
+.footer-bawah .footer-links a:before {
   content: "|";
   font-weight:300;
   font-size: 20px;
@@ -207,17 +228,17 @@ body .container h1{
   padding-right: 5px;
 }
 
-.footer-distributed .footer-links .link-1:before {
+.footer-bawah .footer-links .link-1:before {
   content: none;
 }
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
+.footer-bawah .footer-right{
 	width: 20%;
 }
 
-.footer-distributed .footer-company-about{
+.footer-bawah .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
 	font-size: 13px;
@@ -225,7 +246,7 @@ body .container h1{
 	margin: 0;
 }
 
-.footer-distributed .footer-company-about span{
+.footer-bawah .footer-company-about span{
 	display: block;
 	color:  #ffffff;
 	font-size: 14px;
@@ -233,11 +254,11 @@ body .container h1{
 	margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons{
+.footer-bawah .footer-icons{
 	margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
+.footer-bawah .footer-icons a{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
