@@ -84,9 +84,11 @@ table {
 	}
   }
   /* Bagian Isi Website*/
-
+.container {
+	height: ;
+}
 body .container h1{
-	height: auto;
+	height: 300px;
 	margin: 30px;
 	border: 30px;
 	padding: 50px;
